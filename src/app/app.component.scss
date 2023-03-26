@@ -70,13 +70,14 @@
         height: 80px;
     }
     span{
-        transform: translateY(30%);
+        transform: translateY(60%);
         display: block;
-        animation: titleFadeIn   ;
+        animation: titleFadeIn ease-in-out $duration forwards;
+        animation-delay: $duration - 400ms;
         
-    animation-delay: $duration + 400ms;
-    animation: titleFadeIn ease-in-out $duration forwards;
-    
+    }
+    .second{
+        animation-delay: $duration ;
     }
  
     strong:last-child{
